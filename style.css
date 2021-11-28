@@ -94,7 +94,7 @@
 	}
 
 	.topnav a.active {
-	  border-bottom: 3px solid red;
+	  border-bottom: 5px solid red;
 	}
 
 	.topnav img{
@@ -362,10 +362,11 @@
 
 	footer{
 		background-color: rgb(18, 24, 56);
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		margin-top: 4rem;
 		color: #ccc5b4;
+		overflow:hidden;
 	}
 
 	footer img{
@@ -376,7 +377,7 @@
 	}
 
 	footer h3{
-		padding-top: 50px;
+		padding-top: 60px;
 		text-align: center;
 	}
 
@@ -533,6 +534,7 @@
 	bottom:400px;
 	font-size: 40px;
 	color:#222;
+	display: inline-block
 }
 
 
@@ -632,12 +634,6 @@
 	color:#222;
 	font-size: 15px;
 	margin-bottom: 0px
-}
-
-.hello{
-	font-size: 50px;
-	font-family: cursive;
-	text-decoration: underline;
 }
 
 .test{
@@ -831,6 +827,8 @@
  bottom:400px;
  font-size: 40px;
  color:#222;
+ display: inline-block
+
 }
 
 
@@ -1116,6 +1114,8 @@
  bottom:400px;
  font-size: 40px;
  color:#222;
+ display: inline-block
+
 }
 
 
@@ -1386,17 +1386,29 @@
 	text-decoration: underline;
 	position: relative;
 	bottom:85px;
-	left:100px;
+	left:750px;
 	color:#222;
+	display: inline;
 }
 
-.nick, .timo{
+.nick{
 	color:#222;
 	font-size: 20px;
 	font-family: cassannet-plus-regular;
 	position: relative;
-	left:750px;
-	bottom: 50px
+	left:600px;
+	bottom: 30px;
+	display: inline;
+}
+
+.timo{
+	color:#222;
+	font-size: 20px;
+	font-family: cassannet-plus-regular;
+	position: relative;
+	left:50px;
+	top: 20px;
+	display: inline;
 }
 
 .nick a, .timo a{
@@ -1417,4 +1429,183 @@
 .email-wrapper{
 	position: relative;
 	top:100px
+}
+
+
+.axn-about{
+	width:300px;
+	position: relative;
+	top:200px;
+	left:150px;
+	border: 10px solid #222;
+	padding:130px 20px;
+	border-radius: 30px;
+	background-image: linear-gradient(to bottom right, #0024c2, #c20000);
+}
+
+.title-About{
+	text-align: center;
+	font-family: 'Ubuntu';
+	font-size:50px;
+	color: #222;
+	border: 5px solid #222;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	display: inline;
+	position: absolute;
+	top:100px;
+	left:43%
+}
+
+.axn-bio{
+	font-family: 'Ubuntu';
+	font-size: 20px;
+	color:#222;
+	width:50%;
+	text-align: left;
+	position: relative;
+	left:40%;
+	bottom:200px;
+	font-weight: lighter;
+}
+
+.axn-bio span{
+	font-size: 40px;
+	font-family: 'Ubuntu'
+}
+
+.founder{
+	font-family: 'Ubuntu';
+	font-size: 70px;
+	color:#222;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 20px
+}
+
+.img-nick{
+	border:10px solid #222;
+	border-radius: 20px;
+	padding:20px 20px;
+	background-image:linear-gradient(to bottom right, #0024c2, #c20000);
+	position: relative;
+	top:150px;
+	left:70px;
+	width: 220px;
+
+}
+
+.img-timo{
+	border:10px solid #222;
+	border-radius: 20px;
+	padding:50px 20px;
+	background-image:linear-gradient(to bottom right, #0024c2, #c20000);
+	position: relative;
+	bottom: 693px;
+	left:800px;
+	width:220px
+}
+
+.nick-bio{
+	color:#222;
+	width:20%;
+	position: relative;
+	bottom: 275px;
+	left: 380px;
+	text-align: left;
+}
+
+.timo-bio{
+	color:#222;
+	width:20%;
+	position: relative;
+	left:1100px;
+	bottom: 1100px;
+	text-align: left;
+}
+
+.timo-bio span, .nick-bio span{
+	font-size: 30px
+}
+
+.email-about-nick{
+	color: #222;
+	position: absolute;
+	top: 1520px;
+	left:100px;
+	letter-spacing: 5px
+}
+
+.email-about-timo{
+	color: #222;
+	position: absolute;
+	top: 1520px;
+	right:100px;
+	letter-spacing: 5px
+}
+
+.mission{
+	font-family: 'Ubuntu';
+	font-size: 70px;
+	color:#222;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 20px;
+	position: relative;
+	bottom: 750px
+}
+
+.mission-txt{
+	width: 60%;
+	color: #222;
+	text-align: center;
+	position: relative;
+	left: 300px;
+	bottom: 650px;
+	padding-bottom: 500px
+}
+
+.mission-txt span{
+	font-size: 40px
+}
+
+.socials-about a{
+	color:#ccc5b4;
+	font-size: 25px;
+	position: relative;
+	bottom: 80px;
+	left:79%
+}
+
+.socials-about a:hover{
+	color:grey;
+}
+
+.socials-about li{
+	display: inline;
+	margin-right: 20px
+}
+
+
+
+.ss1{
+	width:1000px;
+	position: absolute;
+	top: 3000px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.code{
+	font-family: 'Ubuntu';
+	font-size: 70px;
+	color:#222;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 20px;
+	position: absolute;
+	left: 400px;
+	top:2500px
 }
